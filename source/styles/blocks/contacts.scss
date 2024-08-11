@@ -1,0 +1,32 @@
+.contacts__slogan {
+  font-family: $secondary-font;
+  color: $defolt-color-mod;
+  line-height: 1.25;
+  text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet-point) {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+}
+
+.contacts__address {
+  font-size: 14px;
+  font-style: normal;
+  color: $defolt-lighten-color;
+  line-height: 1.42;
+
+  @media (min-width: $tablet-point) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.contacts__street {
+  margin: 0;
+}
+
+.contacts__city {
+  margin: 0;
+}
