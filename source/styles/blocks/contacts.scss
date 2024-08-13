@@ -1,6 +1,6 @@
 .contacts__slogan {
   font-family: $secondary-font;
-  color: $defolt-color-mod;
+  color: $default-color-mod;
   line-height: 1.25;
   text-transform: uppercase;
   margin: 0;
@@ -14,7 +14,7 @@
 .contacts__address {
   font-size: 14px;
   font-style: normal;
-  color: $defolt-lighten-color;
+  color: $default-lighten-color;
   line-height: 1.42;
 
   @media (min-width: $tablet-point) {

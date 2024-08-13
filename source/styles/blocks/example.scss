@@ -17,7 +17,7 @@
 
 .example__description {
   font-size: 14px;
-  color: $defolt-lighten-color;
+  color: $default-lighten-color;
   line-height: 1.28;
   margin: 0;
 
@@ -33,10 +33,10 @@
   padding: 0;
 }
 
-.example__termin {
+.example__term {
   font-size: 12px;
   line-height: 1;
-  color: $defolt-lighten-color;
+  color: $default-lighten-color;
   text-transform: lowercase;
 
   @media (min-width: $tablet-point) {

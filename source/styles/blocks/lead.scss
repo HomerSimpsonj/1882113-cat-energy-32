@@ -1,10 +1,10 @@
 .lead {
   font-family: $secondary-font;
-  background-color: $brend-color;
+  background-color: $brand-color;
   color: $light-color;
 
   @media (min-width: $tablet-point) {
-    color: $defolt-color;
+    color: $default-color;
     background-color: $light-color;
   }
 }
