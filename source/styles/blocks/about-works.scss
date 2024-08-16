@@ -24,3 +24,41 @@
     line-height: 1.5;
   }
 }
+
+.about-works__item {
+  &--eco::before {
+    @include before (60px, 60px, url("../../icons/stack.svg#eco"));
+
+    @media (min-width: $tablet-point) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &--sort::before {
+    @include before (60px, 60px, url("../../icons/stack.svg#sort"));
+
+    @media (min-width: $tablet-point) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &--use::before {
+    @include before (60px, 60px, url("../../icons/stack.svg#use"));
+
+    @media (min-width: $tablet-point) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &--time::before {
+    @include before (60px, 60px, url("../../icons/stack.svg#time"));
+
+    @media (min-width: $tablet-point) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}

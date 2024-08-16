@@ -34,11 +34,20 @@
 }
 
 .product__card--more {
-  .product__title {
+  &::before {
+    @include before (30px, 30px, url("../../icons/stack.svg#plus"));
+
+    @media (min-width: $tablet-point) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  & .product__title {
     color: $default-color-mod;
   }
 
-  .product__description {
+  & .product__description {
     color: $default-lighten-color;
     margin: 0;
 
