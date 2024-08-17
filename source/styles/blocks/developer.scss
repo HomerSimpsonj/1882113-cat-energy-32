@@ -9,6 +9,9 @@
     height: 34px;
     mask-image: url("../../icons/stack.svg#developer-logo");
     background-color: $akcent-color;
+    mask-size: contain;
+    mask-position: center;
+    mask-repeat: no-repeat;
   }
 
   &:hover::before {
