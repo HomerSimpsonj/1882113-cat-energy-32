@@ -1,7 +1,28 @@
 .lead {
   font-family: $secondary-font;
-  background-color: $brand-color;
+  position: relative;
   color: $light-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 302px;
+    background-image:
+      linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      image-set(url("../../images/site/background-lead-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/site/background-lead-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/site/background-lead-mobile@1x.jpg") type("image/jpg") 1x,
+      url("../../images/site/background-lead-mobile@2x.jpg") type("image/jpg") 2x),
+      linear-gradient(235deg, rgba(66, 65, 71, 1) 30%, rgba(80, 78, 83, 1) 60%, rgba(83, 82, 87, 1) 80%);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #434248;
+    z-index: -1;
+  }
 
   @media (min-width: $tablet-point) {
     color: $default-color;

@@ -110,6 +110,7 @@
   padding: 0;
   border: none;
   position: relative;
+  cursor: col-resize;
 
   &::before {
     content: "";
@@ -124,6 +125,20 @@
     left: -18px;
   }
 
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 18px;
+    mask-image: url("../../icons/stack.svg#slider-button-inner");
+    background-color: $akcent-color;
+    mask-size: contain;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    top: calc(50% - 9px);
+    left: -10px;
+  }
+
   &:hover::before {
     border-color: $brand-color;
   }
@@ -133,29 +148,12 @@
   }
 
   &:hover,
-  &:hover .example__slider-button-inner::before {
+  &:hover::after {
     background-color: $brand-color;
   }
 
   &:active,
-  &:active .example__slider-button-inner::before {
+  &:active::after {
     background-color: rgba(94, 170, 47, 0.6);
-  }
-}
-
-.example__slider-button-inner {
-  &::before {
-    content: "";
-    display: block;
-    width: 24px;
-    height: 18px;
-    mask-image: url("../../icons/stack.svg#slider-button-inner");
-    background-color: $akcent-color;
-    mask-size: contain;
-    mask-position: center;
-    mask-repeat: no-repeat;
-    position: absolute;
-    top: calc(50% - 9px);
-    left: -10px;
   }
 }
