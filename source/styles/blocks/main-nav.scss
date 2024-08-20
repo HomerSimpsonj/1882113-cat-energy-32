@@ -1,16 +1,16 @@
 .main-nav {
   font-family: $secondary-font;
-  font-size: 20px;
+  font-size: $primary-middle;
   line-height: 1;
   text-transform: uppercase;
 
   @media (min-width: $tablet-point) {
-    font-size: 18px;
+    font-size: $quaternary-small;
     line-height: 1.33;
   }
 
   @media (min-width: $desktop-point) {
-    font-size: 20px;
+    font-size: $primary-middle;
     line-height: 1;
   }
 }

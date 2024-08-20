@@ -31,23 +31,23 @@
 }
 
 .lead__title {
-  font-size: 36px;
+  font-size: $primary-big;
   line-height: 1;
   font-weight: 400;
   margin: 0;
 
   @media (min-width: $tablet-point) {
-    font-size: 60px;
+    font-size: $tertiary-middle;
   }
 }
 
 .lead__slogan {
-  font-size: 14px;
+  font-size: $secondary-small;
   line-height: 1;
   text-transform: uppercase;
   margin: 0;
 
   @media (min-width: $tablet-point) {
-    font-size: 20px;
+    font-size: $primary-middle;
   }
 }

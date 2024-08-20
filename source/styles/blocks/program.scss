@@ -32,26 +32,26 @@
 
 .program__title {
   font-family: $secondary-font;
-  font-size: 24px;
+  font-size: $secondary-middle;
   line-height: 1.54;
   text-transform: uppercase;
   font-weight: 400;
   margin: 0;
 
   @media (min-width: $tablet-point) {
-    font-size: 36px;
+    font-size: $primary-big;
     line-height: 1;
   }
 }
 
 .program__description {
-  font-size: 14px;
+  font-size: $secondary-small;
   line-height: 1.28;
   color: $default-lighten-color;
   margin: 0;
 
   @media (min-width: $tablet-point) {
-    font-size: 16px;
+    font-size: $tertiary-small;
     color: $default-color;
     line-height: 1.5;
   }
