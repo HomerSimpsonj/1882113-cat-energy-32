@@ -12,12 +12,14 @@
 }
 
 .about-works__list {
+  @include flex (column);
+  gap: 20px;
   font-size: $secondary-small;
   color: $default-lighten-color;
   line-height: 1.28;
   list-style-type: none;
+  padding: 40px 0 49px;
   margin: 0;
-  padding: 0;
 
   @media (min-width: $tablet-point) {
     font-size: $tertiary-small;
@@ -26,6 +28,11 @@
 }
 
 .about-works__item {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 20px;
+  align-items: center;
+
   &--eco::before {
     @include before (60px, 60px, url("../../icons/stack.svg#eco"));
 
@@ -61,4 +68,8 @@
       height: 80px;
     }
   }
+}
+
+.about-works__desc {
+  margin: 0;
 }

@@ -1,4 +1,12 @@
+.header .container {
+  @include flex;
+  padding: 14px 0;
+}
+
 .header__logo {
+  @include flex;
+  gap: 56px;
+
   &:hover {
     opacity: 0.8;
   }

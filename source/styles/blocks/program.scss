@@ -1,8 +1,25 @@
+.program .container {
+  @include flex (column);
+  gap: 20px;
+  padding: 20px 0;
+}
+
 .program__catalog {
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr;
+  padding: 21px 20px 0;
+  align-items: center;
+  column-gap: 20px;
   background-color: $light-darken-color;
+
+  &--pro {
+    grid-template-columns: 67px 1fr 1fr;
+    column-gap: 11px;
+  }
 
   &--slim::before {
     @include before (50px, 53px, url("../../icons/stack.svg#cat"));
+    grid-column: 1/2;
 
     @media (min-width: $tablet-point) {
       width: 200px;
@@ -37,6 +54,7 @@
   text-transform: uppercase;
   font-weight: 400;
   margin: 0;
+  grid-column: 2/4;
 
   @media (min-width: $tablet-point) {
     font-size: $primary-big;
@@ -48,7 +66,10 @@
   font-size: $secondary-small;
   line-height: 1.28;
   color: $default-lighten-color;
+  padding: 22px 0 23px;
   margin: 0;
+  grid-column: 1/4;
+  border-bottom: 1px solid $accent-color-light;
 
   @media (min-width: $tablet-point) {
     font-size: $tertiary-small;
@@ -64,6 +85,8 @@
   font-family: $secondary-font;
   line-height: 1;
   text-transform: uppercase;
+  grid-column: 1/4;
+  padding: 19px 0 22px;
 
   @media (min-width: $tablet-point) {
     font-size: 20px;

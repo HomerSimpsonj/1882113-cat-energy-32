@@ -3,6 +3,8 @@
   position: relative;
   color: $light-color;
   min-height: 480px;
+  min-width: 280px;
+  padding-top: 27px;
 
   &::before {
     content: "";
@@ -29,11 +31,18 @@
   }
 }
 
+.lead .container {
+  @include flex (column);
+}
+
 .lead__title {
   font-size: $primary-big;
   line-height: 1;
   font-weight: 400;
   margin: 0;
+  margin-bottom: 25px;
+  text-align: center;
+
 
   @media (min-width: $tablet-point) {
     font-size: $tertiary-middle;
@@ -45,8 +54,16 @@
   line-height: 1;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 29px;
+  text-align: center;
 
   @media (min-width: $tablet-point) {
     font-size: $primary-middle;
   }
+}
+
+.lead__button-link {
+  width: 100%;
+  order: 1;
+  padding: 10px 0;
 }
