@@ -42,17 +42,17 @@
       height: 60px;
     }
   }
+}
 
-  & .product__title {
-    color: $default-color-mod;
-  }
+.product__card--more .product__title {
+  color: $default-color-mod;
+}
 
-  & .product__description {
-    color: $default-lighten-color;
-    margin: 0;
+.product__card--more .product__description {
+  color: $default-lighten-color;
+  margin: 0;
 
-    @media (min-width: $tablet-point) {
-      line-height: 1.12;
-    }
+  @media (min-width: $tablet-point) {
+    line-height: 1.12;
   }
 }
