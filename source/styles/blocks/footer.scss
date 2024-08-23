@@ -1,8 +1,18 @@
 .footer {
   background-color: $light-darken-color;
+  min-width: 280px;
+}
+
+.footer .container {
+  padding: 40px 0;
 }
 
 .footer__logo-link {
+  display: block;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $accent-color-light;
+
+
   &:hover {
     opacity: 0.8;
   }
@@ -14,4 +24,8 @@
   &:active {
     opacity: 0.6;
   }
+}
+
+.footer__logo-text {
+  margin: 0 auto;
 }

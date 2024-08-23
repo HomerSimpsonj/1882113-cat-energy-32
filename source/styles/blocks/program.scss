@@ -6,14 +6,14 @@
 
 .program__catalog {
   display: grid;
-  grid-template-columns: 50px 1fr 1fr;
+  grid-template-columns: auto 1fr 1fr;
   padding: 21px 20px 0;
   align-items: center;
   column-gap: 20px;
   background-color: $light-darken-color;
 
   &--pro {
-    grid-template-columns: 67px 1fr 1fr;
+    grid-template-columns: 59px 1fr 1fr;
     column-gap: 11px;
   }
 
@@ -34,6 +34,8 @@
 
   &--pro::before {
     @include before (67px, 50px, url("../../icons/stack.svg#cat-walk"));
+    position: relative;
+    left: -8px;
 
     @media (min-width: $tablet-point) {
       width: 268px;

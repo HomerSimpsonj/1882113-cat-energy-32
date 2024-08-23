@@ -1,7 +1,12 @@
 .socials {
   list-style-type: none;
-  padding: 0;
   margin: 0;
+
+  @include flex (row, center);
+  gap: 24px;
+  padding: 20px 0;
+  border-bottom: 1px solid $accent-color-light;
+  margin-bottom: 20px;
 }
 
 .socials__link {

@@ -1,3 +1,13 @@
+.contacts {
+  min-width: 280px;
+}
+
+.contacts .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 26px 0;
+}
+
 .contacts__slogan {
   font-family: $secondary-font;
   color: $default-color-mod;
@@ -29,4 +39,8 @@
 
 .contacts__city {
   margin: 0;
+}
+
+.contacts__map {
+  margin: 0 auto;
 }
