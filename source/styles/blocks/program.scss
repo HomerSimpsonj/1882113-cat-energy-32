@@ -2,6 +2,10 @@
   @include flex (column);
   gap: 20px;
   padding: 20px 0;
+
+  @media (min-width: $tablet-point) {
+    padding: 0;
+  }
 }
 
 .program__catalog {
@@ -24,6 +28,9 @@
     @media (min-width: $tablet-point) {
       width: 200px;
       height: 211px;
+      grid-column: 3/4;
+      grid-row: 1/4;
+      justify-self: center;
     }
 
     @media (min-width: $desktop-point) {
@@ -40,6 +47,8 @@
     @media (min-width: $tablet-point) {
       width: 268px;
       height: 200px;
+      grid-column: 3/4;
+      grid-row: 1/4;
     }
 
     @media (min-width: $desktop-point) {
@@ -61,6 +70,8 @@
   @media (min-width: $tablet-point) {
     font-size: $primary-big;
     line-height: 1;
+    grid-column: 1/3;
+    grid-row: 1/2;
   }
 }
 
@@ -77,6 +88,9 @@
     font-size: $tertiary-small;
     color: $default-color;
     line-height: 1.5;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    border: none;
   }
 }
 
@@ -92,6 +106,8 @@
 
   @media (min-width: $tablet-point) {
     font-size: 20px;
+    grid-column: 1/3;
+    grid-row: 3/4;
   }
 
   &::after {
