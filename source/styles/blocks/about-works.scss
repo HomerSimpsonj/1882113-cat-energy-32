@@ -1,3 +1,9 @@
+.about-works .container {
+  @media (min-width: $tablet-point) {
+    padding: 45px 0 47px;
+  }
+}
+
 .about-works__title {
   font-family: $secondary-font;
   font-size: $primary-big;
@@ -6,8 +12,9 @@
   margin: 0;
 
   @media (min-width: $tablet-point) {
-    font-size: $tertiary-middle;
+    font-size: $tertiary-big;
     line-height: 1;
+    margin-bottom: 32px;
   }
 }
 
@@ -24,6 +31,14 @@
   @media (min-width: $tablet-point) {
     font-size: $tertiary-small;
     line-height: 1.5;
+    padding: 0;
+    padding-right: 79px;
+    display: grid;
+    grid-template-columns: 230px 245px;
+    align-items: flex-start;
+    gap: 37px 100px;
+
+    counter-reset: section;
   }
 }
 
@@ -32,6 +47,26 @@
   grid-template-columns: 60px 1fr;
   gap: 20px;
   align-items: center;
+
+  @media (min-width: $tablet-point) {
+    grid-template-columns: 1fr;
+    gap: 31px;
+    padding: 40px 0 57px;
+    position: relative;
+
+    &::after {
+      content: counter(section);
+      position: absolute;
+      counter-increment: section 1;
+      color: $light-darken-color;
+      font-size: 280px;
+      line-height: 1;
+      font-weight: 400;
+      font-family: $secondary-font;
+      justify-self: end;
+      z-index: -1;
+    }
+  }
 
   &--eco::before {
     @include before (60px, 60px, url("../../icons/stack.svg#eco"));

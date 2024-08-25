@@ -1,12 +1,30 @@
 .example {
-  background-color: $light-darken-color;
   min-width: 280px;
+
+  @media (max-width: 767px) {
+    background-color: $light-darken-color-bg;
+  }
+
+  @media (min-width: $tablet-point) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(to top, rgba(242, 242, 242, 1) 462px, transparent 462px);
+      z-index: -1;
+    }
+  }
 }
 
 .example .container {
   padding: 25px 0 40px;
-}
 
+  @media (min-width: $tablet-point) {
+    padding: 45px 0 101px;
+  }
+}
 
 .example__title {
   font-family: $secondary-font;
@@ -17,8 +35,9 @@
   margin-bottom: 40px;
 
   @media (min-width: $tablet-point) {
-    font-size: $tertiary-middle;
+    font-size: $tertiary-big;
     line-height: 1;
+    margin-bottom: 60px;
   }
 }
 
@@ -32,6 +51,15 @@
   @media (min-width: $tablet-point) {
     font-size: $tertiary-small;
     line-height: 1.5;
+    margin-bottom: 55px;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $tablet-point) {
+    @include flex;
+    margin-bottom: 99px;
+    align-items: flex-start;
   }
 }
 
@@ -44,6 +72,12 @@
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
+
+  @media (min-width: $tablet-point) {
+    grid-template-columns: 162px 162px;
+    gap: 43px;
+    margin: 0;
+  }
 }
 
 .example__stats-wrapper {
@@ -60,7 +94,7 @@
   text-transform: lowercase;
   position: relative;
   top: -9px;
-  background-color: $light-darken-color;
+  background-color: $light-darken-color-bg;
   order: 1;
   width: 70%;
   padding: 0 10%;
@@ -68,6 +102,9 @@
 
   @media (min-width: $tablet-point) {
     font-size: $secondary-small;
+    width: auto;
+    padding: 0 5%;
+    background-color: $light-color;
   }
 }
 
@@ -87,6 +124,8 @@
   @media (min-width: $tablet-point) {
     font-size: $tertiary-middle;
     line-height: 1.23;
+    width: 162px;
+    padding: 15px;
   }
 }
 
@@ -102,6 +141,10 @@
   @media (min-width: $tablet-point) {
     font-size: $primary-middle;
     line-height: 1;
+    width: 174px;
+    text-align: right;
+    padding: 11px 0 0;
+    margin: 0;
   }
 }
 
@@ -117,6 +160,7 @@
   @media (min-width: $tablet-point) {
     width: 560px;
     height: 512px;
+    margin: 0 auto;
   }
 }
 

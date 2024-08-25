@@ -6,6 +6,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 26px 0;
+
+  @media (min-width: $tablet-point) {
+    grid-template-columns: auto auto;
+    gap: 308px;
+    padding: 60px 0;
+  }
 }
 
 .contacts__slogan {
@@ -30,11 +36,16 @@
   @media (min-width: $tablet-point) {
     font-size: $tertiary-small;
     line-height: 1.25;
+    text-align: right;
   }
 }
 
 .contacts__street {
   margin: 0;
+
+  @media (min-width: $tablet-point) {
+    margin-bottom: 20px;
+  }
 }
 
 .contacts__city {

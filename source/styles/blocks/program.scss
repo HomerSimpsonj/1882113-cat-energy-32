@@ -5,20 +5,43 @@
 
   @media (min-width: $tablet-point) {
     padding: 0;
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-point) {
+    padding: 82px 0 71px;
+    flex-direction: row;
+    gap: 80px;
   }
 }
 
 .program__catalog {
   display: grid;
-  grid-template-columns: auto 1fr 1fr;
+  grid-template-columns: 50px 1fr 1fr;
   padding: 21px 20px 0;
   align-items: center;
   column-gap: 20px;
   background-color: $light-darken-color;
 
-  &--pro {
-    grid-template-columns: 59px 1fr 1fr;
-    column-gap: 11px;
+  @media (min-width: $tablet-point) {
+    grid-template-columns: 1fr 200px;
+    column-gap: 53px;
+    padding: 77px 63px 57px 52px;
+    align-items: start;
+  }
+
+  @media (min-width: $desktop-point) {
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: 62px;
+
+    &--slim {
+      padding: 47px 61px 59px 52px;
+    }
+
+    &--pro {
+      padding: 47px 67px 59px 52px;
+    }
   }
 
   &--slim::before {
@@ -28,7 +51,7 @@
     @media (min-width: $tablet-point) {
       width: 200px;
       height: 211px;
-      grid-column: 3/4;
+      grid-column: 2/3;
       grid-row: 1/4;
       justify-self: center;
     }
@@ -36,6 +59,8 @@
     @media (min-width: $desktop-point) {
       width: 100px;
       height: 106px;
+      grid-column: 1/2;
+      grid-row: 1/2;
     }
   }
 
@@ -47,14 +72,31 @@
     @media (min-width: $tablet-point) {
       width: 268px;
       height: 200px;
-      grid-column: 3/4;
+      grid-column: 2/3;
       grid-row: 1/4;
+      left: -38px;
     }
 
     @media (min-width: $desktop-point) {
       width: 134px;
       height: 100px;
+      grid-column: 1/2;
+      grid-row: 1/2;
+      left: -19px;
+      margin-right: -19px;
     }
+  }
+}
+
+.program__catalog--slim .program__description {
+  @media (min-width: $desktop-point) {
+    width: 457px;
+  }
+}
+
+.program__catalog--pro .program__description {
+  @media (min-width: $desktop-point) {
+    width: 451px;
   }
 }
 
@@ -70,8 +112,12 @@
   @media (min-width: $tablet-point) {
     font-size: $primary-big;
     line-height: 1;
-    grid-column: 1/3;
+    grid-column: 1/2;
     grid-row: 1/2;
+  }
+
+  @media (min-width: $desktop-point) {
+    grid-column: 2/3;
   }
 }
 
@@ -88,9 +134,15 @@
     font-size: $tertiary-small;
     color: $default-color;
     line-height: 1.5;
-    grid-column: 1/3;
+    grid-column: 1/2;
     grid-row: 2/3;
+    padding: 24px 0 33px;
     border: none;
+  }
+
+  @media (min-width: $desktop-point) {
+    grid-column: 1/3;
+    width: 457px;
   }
 }
 
@@ -106,8 +158,12 @@
 
   @media (min-width: $tablet-point) {
     font-size: 20px;
-    grid-column: 1/3;
+    grid-column: 1/2;
     grid-row: 3/4;
+  }
+
+  @media (min-width: $desktop-point) {
+    grid-column: 1/3;
   }
 
   &::after {

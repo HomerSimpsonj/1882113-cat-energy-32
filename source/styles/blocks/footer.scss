@@ -4,14 +4,25 @@
 }
 
 .footer .container {
-  padding: 40px 0;
+  padding: 20px 0;
+
+  @media (min-width: $tablet-point) {
+    padding: 55px 0;
+
+    @include flex;
+  }
 }
 
 .footer__logo-link {
   display: block;
-  padding-bottom: 20px;
+  padding: 20px 0;
   border-bottom: 1px solid $accent-color-light;
 
+  @media (min-width: $tablet-point) {
+    border: none;
+    padding: 6px 0;
+    margin-right: auto;
+  }
 
   &:hover {
     opacity: 0.8;

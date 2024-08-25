@@ -13,6 +13,7 @@
   @media (min-width: $desktop-point) {
     font-size: $primary-middle;
     line-height: 1;
+    max-width: 610px;
   }
 }
 
@@ -95,6 +96,14 @@
     gap: 10px 33px;
     flex-wrap: wrap;
   }
+
+  @media (min-width: $desktop-point) {
+    &--index {
+      color: $light-color;
+    }
+    column-gap: 33px;
+    background-color: transparent;
+  }
 }
 
 .main-nav__item {
@@ -112,6 +121,10 @@
 
   @media (min-width: $tablet-point) {
     padding: 0;
+  }
+
+  @media (min-width: $desktop-point) {
+    padding: 16px 0 13px;
   }
 
   &:hover {

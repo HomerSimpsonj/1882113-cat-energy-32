@@ -4,6 +4,10 @@
 
   @include flex;
 
+  @media (min-width: $tablet-point) {
+    gap: 23px;
+  }
+
   &::before {
     content: "";
     display: block;
