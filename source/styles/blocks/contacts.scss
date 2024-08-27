@@ -80,6 +80,8 @@
 
 iframe {
   height: 362px;
+  width: 100%;
+  border: none;
 
   @media (min-width: $tablet-point) {
     height: 400px;
