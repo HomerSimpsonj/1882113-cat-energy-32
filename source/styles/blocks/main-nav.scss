@@ -46,22 +46,6 @@
     left: 0;
   }
 
-  // Анимация
-
-  &.active .main-nav__toggle-wrapper {
-    transform: scale(0);
-  }
-
-  &.active::before {
-    top: calc(50% - 1px);
-    transform: rotate(45deg);
-  }
-
-  &.active::after {
-    top: calc(50% - 1px);
-    transform: rotate(-45deg);
-  }
-
   @media (min-width: $tablet-point) {
     display: none;
   }
@@ -119,6 +103,15 @@
   display: block;
   padding: 22px 0 24px;
 
+  &--current {
+    @media (min-width: $tablet-point) {
+      text-decoration: underline;
+      text-decoration-color: $brand-color;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 10px;
+    }
+  }
+
   @media (min-width: $tablet-point) {
     padding: 0;
   }
@@ -134,4 +127,28 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.main-nav__list--index .main-nav__link--current {
+  @media (min-width: $desktop-point) {
+    text-decoration-color: $light-color;
+  }
+}
+
+.main-nav.active .main-nav__toggle-wrapper {
+  transform: scale(0);
+}
+
+.main-nav.active .main-nav__toggle::before {
+  top: calc(50% - 1px);
+  transform: rotate(45deg);
+}
+
+.main-nav.active .main-nav__toggle::after {
+  top: calc(50% - 1px);
+  transform: rotate(-45deg);
+}
+
+.main-nav.active .main-nav__list {
+  display: block;
 }
