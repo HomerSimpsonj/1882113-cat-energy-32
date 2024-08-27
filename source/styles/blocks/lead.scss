@@ -53,8 +53,8 @@
         url("../../images/site/background-lead-desktop@2x.webp") type("image/webp") 2x,
         url("../../images/site/background-lead-desktop@1x.jpg") type("image/jpg") 1x,
         url("../../images/site/background-lead-desktop@2x.jpg") type("image/jpg") 2x),
-        linear-gradient(to bottom, rgba(66, 65, 71, 1), rgba(81, 80, 84, 1));
-      background-size: auto;
+        linear-gradient(to right, rgba(66, 65, 71, 1), rgba(62, 62, 64, 1));
+      background-size: contain;
       background-position: left top;
       background-repeat: no-repeat;
       z-index: -1;

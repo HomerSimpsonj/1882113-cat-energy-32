@@ -103,8 +103,12 @@
   display: block;
   padding: 22px 0 24px;
 
-  &--current {
-    @media (min-width: $tablet-point) {
+  @media (min-width: $tablet-point) {
+    padding: 0;
+  }
+
+  @media (min-width: $tablet-point) {
+    &--current {
       text-decoration: underline;
       text-decoration-color: $brand-color;
       text-decoration-thickness: 2px;
@@ -112,9 +116,6 @@
     }
   }
 
-  @media (min-width: $tablet-point) {
-    padding: 0;
-  }
 
   @media (min-width: $desktop-point) {
     padding: 16px 0 13px;
