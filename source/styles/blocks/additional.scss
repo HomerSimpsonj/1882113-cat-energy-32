@@ -1,5 +1,9 @@
 .additional .container {
   padding: 25px 20px 0;
+
+  @media (min-width: $tablet-point) {
+    padding: 24px 30px 40px;
+  }
 }
 
 .additional__title {
@@ -11,6 +15,9 @@
 
   @media (min-width: $tablet-point) {
     font-size: $quaternary-middle;
+    width: fit-content;
+    padding: 0 40px;
+    margin: 0 0 80px;
   }
 
   @media (min-width: $desktop-point) {

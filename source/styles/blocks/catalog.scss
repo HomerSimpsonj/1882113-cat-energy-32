@@ -6,14 +6,20 @@
 .catalog .container {
   padding: 27px 20px 0;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background-color: $decoration-color;
+  @media (max-width: 767px) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: $decoration-color;
+    }
+  }
+
+  @media (min-width: $tablet-point) {
+    padding: 65px 30px 50px;
   }
 }
 
@@ -26,5 +32,6 @@
 
   @media (min-width: $tablet-point) {
     font-size: $tertiary-big;
+    margin: 0 0 84px;
   }
 }

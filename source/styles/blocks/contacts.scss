@@ -21,7 +21,7 @@
   @media (min-width: $tablet-point) {
     grid-template-columns: auto auto;
     gap: 308px;
-    padding: 60px 30px;
+    padding: 60px 70px;
   }
 
   @media (min-width: $desktop-point) {
@@ -60,6 +60,7 @@
     font-size: $tertiary-small;
     line-height: 1.25;
     text-align: right;
+    width: 157px;
   }
 
   @media (min-width: $desktop-point) {
