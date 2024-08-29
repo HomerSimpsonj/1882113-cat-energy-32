@@ -1,6 +1,10 @@
 .contacts {
   min-width: 320px;
 
+  &--darken {
+    background-color: $light-darken-color;
+  }
+
   @media (min-width: $desktop-point) {
     display: grid;
     grid-template-columns: 1fr 1220px 1fr;
@@ -12,6 +16,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 26px 20px;
+
 
   @media (min-width: $tablet-point) {
     grid-template-columns: auto auto;
