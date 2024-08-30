@@ -32,7 +32,7 @@
   }
 
   @media (min-width: $desktop-point) {
-    @include flex (column, center, center);
+    @include flex (column, flex-start, center);
     width: 245px;
     padding: 56px 42px 43px;
 

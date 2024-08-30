@@ -187,6 +187,10 @@
       margin: 0 0 50px;
     }
   }
+
+  @media (min-width: $desktop-point) {
+    margin-top: 80px;
+  }
 }
 
 .product__card--more .product__title {
