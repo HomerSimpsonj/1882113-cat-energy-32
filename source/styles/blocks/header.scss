@@ -9,7 +9,11 @@
 
   @media (min-width: $desktop-point) {
     padding: 55px 60px;
-    align-self: flex-start;
+  }
+}
+
+.header--main .container {
+  @media (min-width: $desktop-point) {
     position: absolute;
     top: 0;
     left: 0;

@@ -4,6 +4,13 @@
   @media (min-width: $tablet-point) {
     padding: 24px 30px 40px;
   }
+
+  @media (min-width: $desktop-point) {
+    padding: 21px 60px 20px;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 81px;
+  }
 }
 
 .additional__title {
@@ -22,5 +29,7 @@
 
   @media (min-width: $desktop-point) {
     font-size: $secondary-big;
+    padding: 0;
+    grid-column: 1/3;
   }
 }

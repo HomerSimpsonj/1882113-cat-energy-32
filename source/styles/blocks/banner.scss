@@ -31,6 +31,24 @@
     background-size: 708px 199px;
   }
 
+  @media (min-width: $desktop-point) {
+    @include flex (column, center, center);
+    width: 245px;
+    padding: 56px 42px 43px;
+
+    background-image:
+      linear-gradient(to bottom, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      image-set(
+        url("../../images/site/baner-image-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/site/baner-image-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/site/baner-image-desktop@1x.jpg") type("image/jpg") 1x,
+        url("../../images/site/baner-image-desktop@2x.jpg") type("image/jpg") 1x
+      );
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+
   &::before {
     @include before (78px, 80px, url("../../icons/stack.svg#gift"));
 
@@ -50,5 +68,9 @@
   @media (min-width: $tablet-point) {
     width: 161px;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-point) {
+    text-align: center;
   }
 }

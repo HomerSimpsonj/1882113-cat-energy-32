@@ -4,6 +4,10 @@
   @media (min-width: $tablet-point) {
     padding: 40px 30px 80px;
   }
+
+  @media (min-width: $tablet-point) {
+    padding: 76px 60px 96px;
+  }
 }
 
 .promo__title {
@@ -22,6 +26,8 @@
 
   @media (min-width: $desktop-point) {
     font-size: $secondary-big;
+    padding: 0;
+    margin: 0 0 72px;
   }
 }
 
@@ -42,6 +48,10 @@
     padding: 0 38px;
     display: grid;
     grid-template-columns: 1fr 256px;
+  }
+
+  @media (min-width: $desktop-point) {
+    padding: 0 234px;
   }
 }
 
