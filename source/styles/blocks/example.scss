@@ -1,6 +1,8 @@
 .example {
   min-width: 320px;
+
   background-color: $light-darken-color-bg;
+
 
   @media (min-width: $tablet-point) {
     position: relative;
