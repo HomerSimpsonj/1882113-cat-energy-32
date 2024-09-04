@@ -17,6 +17,12 @@
   }
 }
 
+@media (max-width: $mobile-only) {
+  .main-nav.main-nav--nojs {
+    margin: 0 auto;
+  }
+}
+
 .main-nav__toggle {
   width: 24px;
   height: 24px;
@@ -47,6 +53,12 @@
   }
 
   @media (min-width: $tablet-point) {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-only) {
+  .main-nav--nojs .main-nav__toggle {
     display: none;
   }
 }
@@ -90,12 +102,47 @@
   }
 }
 
+@media (max-width: $mobile-only) {
+  .main-nav--nojs .main-nav__list {
+    display: block;
+    position: static;
+  }
+}
+
 .main-nav__item {
-  border-top: 1px solid $accent-color-light;
+  position: relative;
   text-align: center;
 
-  @media (min-width: $tablet-point) {
-    border: none;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 1px;
+    min-width: 320px;
+    background-color: $border-color-link;
+    box-shadow: 100vw 0 0 0 $border-color-link;
+
+    @media (min-width: $tablet-point) {
+      display: none;
+    }
+  }
+
+  &:last-child::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 1px;
+    min-width: 320px;
+    background-color: $border-color-link;
+    box-shadow: 100vw 0 0 0 $border-color-link;
+
+    @media (min-width: $tablet-point) {
+      display: none;
+    }
   }
 }
 
@@ -168,20 +215,24 @@
   }
 }
 
-.main-nav.active .main-nav__toggle-wrapper {
-  transform: scale(0);
+
+@media (max-width: $mobile-only) {
+  .main-nav.active .main-nav__toggle-wrapper {
+    transform: scale(0);
+  }
+
+  .main-nav.active .main-nav__toggle::before {
+    top: calc(50% - 1px);
+    transform: rotate(45deg);
+  }
+
+  .main-nav.active .main-nav__toggle::after {
+    top: calc(50% - 1px);
+    transform: rotate(-45deg);
+  }
+
+  .main-nav.active .main-nav__list {
+    display: block;
+  }
 }
 
-.main-nav.active .main-nav__toggle::before {
-  top: calc(50% - 1px);
-  transform: rotate(45deg);
-}
-
-.main-nav.active .main-nav__toggle::after {
-  top: calc(50% - 1px);
-  transform: rotate(-45deg);
-}
-
-.main-nav.active .main-nav__list {
-  display: block;
-}
