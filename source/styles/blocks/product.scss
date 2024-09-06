@@ -2,6 +2,23 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 100vw;
+    min-width: 320px;
+    height: 1px;
+    background-color: $decoration-color;
+    box-shadow: 100vw 0 0 0 $decoration-color;
+
+    @media (min-width: $tablet-point) {
+      display: none;
+    }
+  }
 
   @media (min-width: $tablet-point) {
     display: grid;
@@ -35,24 +52,6 @@
 
     @media (min-width: $tablet-point) {
       display: none;
-    }
-  }
-
-  &:first-child {
-    &::before {
-      content: "";
-      top: 0;
-      right: 0;
-      position: absolute;
-      width: 100vw;
-      min-width: 320px;
-      height: 1px;
-      background-color: $decoration-color;
-      box-shadow: 100vw 0 0 0 $decoration-color;
-
-      @media (min-width: $tablet-point) {
-        display: none;
-      }
     }
   }
 
