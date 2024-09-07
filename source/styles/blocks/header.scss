@@ -26,10 +26,11 @@
 .header__logo {
   @include flex;
   gap: 56px;
-  padding: 14px 0;
+  padding: 13px 0 14px;
 
   @media (min-width: $tablet-point) {
     gap: 13px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-point) {

@@ -95,6 +95,7 @@
   @media (min-width: $desktop-point) {
     width: 169px;
     height: 210px;
+    margin: 0 0 12px;
   }
 }
 
@@ -109,6 +110,10 @@
     text-align: center;
     padding: 0;
     margin: 0 0 20px;
+  }
+
+  @media (min-width: $desktop-point) {
+    margin: 0 0 24px;
   }
 }
 
@@ -138,7 +143,7 @@
 
   @media (min-width: $tablet-point) {
     @include flex(column, space-between, normal);
-    row-gap: 10px;
+    row-gap: 7px;
     align-self: flex-start;
     font-size: $tertiary-small;
     line-height: 1.25;
@@ -153,6 +158,11 @@
 
   @media (min-width: $tablet-point) {
     border-bottom: 1px solid $light-darken-color-mod;
+    padding: 0 0 1px;
+  }
+
+  @media (min-width: $tablet-point) {
+    padding: 0 0 5px;
   }
 }
 
@@ -164,6 +174,15 @@
   grid-column: 1/3;
   padding: 10px 0;
   width: 100%;
+  line-height: 1.25;
+
+  @media (min-width: $tablet-point) {
+    width: 250px;
+  }
+
+  @media (min-width: $tablet-point) {
+    width: 169px;
+  }
 }
 
 .product__card--more {
@@ -191,6 +210,10 @@
 
   @media (min-width: $desktop-point) {
     margin-top: 80px;
+
+    &::before {
+      margin: 0 0 38px;
+    }
   }
 }
 
@@ -203,6 +226,10 @@
     width: 134px;
     text-align: center;
     margin: 0 0 23px;
+  }
+
+  @media (min-width: $desktop-point) {
+    margin: 0 0 27px;
   }
 }
 
@@ -219,6 +246,10 @@
     text-align: center;
     margin: 0 0 82px;
     line-height: 1.12;
+  }
+
+  @media (min-width: $desktop-point) {
+    margin: 0 0 92px;
   }
 }
 

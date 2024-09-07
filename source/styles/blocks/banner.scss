@@ -90,9 +90,11 @@
   @media (min-width: $tablet-point) {
     width: 161px;
     text-align: left;
+    padding: 16px 0 0;
   }
 
   @media (min-width: $desktop-point) {
     text-align: center;
+    padding: 0;
   }
 }

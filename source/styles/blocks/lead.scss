@@ -145,12 +145,15 @@
   width: 100%;
   order: 1;
   padding: 10px 0;
+  line-height: 1.25;
 
   @media (min-width: $tablet-point) {
     order: 0;
     width: 244px;
     padding: 14px 26px;
     z-index: 1;
+    font-size: 20px;
+    line-height: 1.3;
     margin-left: 90px;
   }
 
@@ -161,8 +164,10 @@
 }
 
 .lead__img {
+  margin: 0 0 3px;
+
   @media (min-width: $tablet-point) {
-    margin-top: -73px;
+    margin: -82px 0 0;
   }
 
   @media (min-width: $desktop-point) {
