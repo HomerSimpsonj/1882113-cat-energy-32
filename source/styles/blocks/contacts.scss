@@ -9,7 +9,13 @@
     position: absolute;
     width: 57px;
     height: 53px;
-    background-image: url("../../images/site/map-pin@2x.png");
+    background-image:
+      image-set(
+        url("../../images/site/map-pin@1x.webp") 1x,
+        url("../../images/site/map-pin@2x.webp") 2x,
+        url("../../images/site/map-pin@1x.png") 1x,
+        url("../../images/site/map-pin@2x.png") 2x,
+      );
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
