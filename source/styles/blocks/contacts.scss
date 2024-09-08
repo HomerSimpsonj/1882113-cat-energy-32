@@ -1,9 +1,37 @@
 .contacts {
-  min-width: 320px;
   display: grid;
+  grid-template-columns: 1fr 320px 1fr;
+  min-width: 320px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 57px;
+    height: 53px;
+    background-image: url("../../images/site/map-pin@2x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    top: 139px;
+    left: 134px;
+  }
 
   &--darken {
     background-color: $light-darken-color;
+  }
+
+  @media (min-width: $tablet-point) {
+    grid-template-columns: 1fr 708px 1fr;
+
+    &::after {
+      width: 113px;
+      height: 106px;
+      top: 146px;
+      left: 303px;
+    }
   }
 
   @media (min-width: $desktop-point) {
@@ -11,20 +39,27 @@
     grid-template-columns: 1fr 1220px 1fr;
     justify-content: flex-start;
     background-color: $light-darken-color;
+
+    &::after {
+      grid-row: 1/2;
+      top: 131px;
+      left: 798px;
+    }
   }
 }
 
 .contacts .container {
   display: grid;
-
   grid-template-columns: 140px 140px;
   justify-content: center;
+  grid-column: 2/3;
   padding: 26px 20px;
 
   @media (min-width: $tablet-point) {
     grid-template-columns: auto auto;
     gap: 308px;
     padding: 60px 70px;
+    grid-column: 1/4;
   }
 
   @media (min-width: $desktop-point) {
@@ -86,7 +121,7 @@
 .contacts__map {
   margin: 0 auto;
 
-  grid-column: 1/2;
+  grid-column: 2/3;
   grid-row: 2/3;
 
   @media (min-width: $desktop-point) {
@@ -101,7 +136,7 @@
   width: 100%;
   border: none;
   z-index: 0;
-  grid-column: 1/2;
+  grid-column: 1/4;
   grid-row: 2/3;
 
   @media (min-width: $tablet-point) {
