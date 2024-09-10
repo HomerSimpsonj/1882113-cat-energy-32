@@ -1,0 +1,15 @@
+noscript {
+  margin: 0 auto;
+  grid-column: 2/3;
+  grid-row: 2/3;
+
+  @media (min-width: $tablet-point) {
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
+
+  @media (min-width: $desktop-point) {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+}

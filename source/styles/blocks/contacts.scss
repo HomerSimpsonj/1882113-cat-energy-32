@@ -75,7 +75,7 @@
     grid-row: 1/2;
     background-color: $light-color;
     padding: 60px 78px 60px 80px;
-    margin: 95px 0 106px;
+    margin: 95px 0 105px;
     gap: 87px;
     z-index: 1;
   }
@@ -124,24 +124,11 @@
   margin: 0;
 }
 
-.contacts__map {
-  margin: 0 auto;
-
-  grid-column: 2/3;
-  grid-row: 2/3;
-
-  @media (min-width: $desktop-point) {
-    grid-column: 1/4;
-    grid-row: 1/2;
-  }
-}
-
 .contacts iframe {
   display: block;
   height: 362px;
   width: 100%;
   border: none;
-  z-index: 0;
   grid-column: 1/4;
   grid-row: 2/3;
 
