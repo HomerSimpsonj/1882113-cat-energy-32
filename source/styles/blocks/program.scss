@@ -10,7 +10,8 @@
 
   @media (min-width: $desktop-point) {
     padding: 82px 60px 50px;
-    flex-direction: row;
+    flex-flow: row wrap;
+    align-items: normal;
     gap: 80px;
   }
 }
@@ -18,10 +19,14 @@
 .program__catalog {
   display: grid;
   grid-template-columns: 50px 1fr 1fr;
-  padding: 22px 20px 18px;
+  padding: 20px 20px 18px;
   align-items: center;
   column-gap: 20px;
   background-color: $light-darken-color;
+
+  &--pro {
+    padding: 24px 20px 18px;
+  }
 
   @media (min-width: $tablet-point) {
     grid-template-columns: 1fr 200px;
@@ -32,6 +37,7 @@
 
   @media (min-width: $desktop-point) {
     grid-template-columns: auto 1fr;
+    align-content: space-between;
     align-items: flex-end;
     column-gap: 62px;
 
@@ -184,14 +190,14 @@
     width: 27px;
     height: 10px;
     background-image: url("../../icons/stack.svg#arrow");
-    background-position: -8px;
+    background-position: -3px;
     background-size: cover;
     background-repeat: no-repeat;
   }
 
   &:hover::after,
   &:focus-visible::after {
-    background-position: center;
+    background-position: right;
     transition: 0.4s;
   }
 

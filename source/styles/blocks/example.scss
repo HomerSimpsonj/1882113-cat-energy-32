@@ -53,7 +53,7 @@
   }
 
   @media (min-width: $desktop-point) {
-    margin-bottom: 142px;
+    margin-bottom: 145px;
   }
 }
 
@@ -71,7 +71,7 @@
   }
 
   @media (min-width: $desktop-point) {
-    width: 436px;
+    width: 433px;
     grid-column: 1/2;
     margin-bottom: 69px;
   }
@@ -163,7 +163,7 @@
   }
 
   @media (min-width: $desktop-point) {
-    padding: 15px 15px 21px;
+    padding: 15px 15px 18px;
   }
 }
 
@@ -190,7 +190,7 @@
     width: auto;
 
     @include flex;
-    column-gap: 63px;
+    column-gap: 67px;
     flex-wrap: wrap;
   }
 }

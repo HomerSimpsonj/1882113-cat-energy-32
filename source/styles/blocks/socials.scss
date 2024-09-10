@@ -4,11 +4,13 @@
 
   @include flex (row, center);
   gap: 24px;
+  flex-wrap: wrap;
   padding: 20px 0;
   border-bottom: 1px solid $accent-color-light;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-point) {
+    width: 132px;
     border: none;
     padding: 8px 0 7px;
     margin: 0 123px 0 0;

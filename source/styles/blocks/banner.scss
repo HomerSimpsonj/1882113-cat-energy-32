@@ -2,7 +2,7 @@
 .banner {
   @include flex (column, center, center);
   padding: 58px 58px 43px;
-  row-gap: 48px;
+  row-gap: 49px;
   background-color: $brand-color;
   width: 280px;
   margin: 0 auto;
@@ -66,7 +66,7 @@
     //   url("../../images/site/baner-image-desktop@1x.jpg") type("image/jpg") 1x,
     //   url("../../images/site/baner-image-desktop@2x.jpg") type("image/jpg") 1x
     // );
-    background-size: contain;
+    background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
   }
@@ -90,7 +90,7 @@
   @media (min-width: $tablet-point) {
     width: 161px;
     text-align: left;
-    padding: 16px 0 0;
+    padding: 14px 0 0;
   }
 
   @media (min-width: $desktop-point) {
