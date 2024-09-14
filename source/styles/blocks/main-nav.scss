@@ -93,7 +93,7 @@
     display: block;
     position: static;
 
-    @include flex;
+    @include flex($justify: flex-start);
     gap: 10px 34px;
     flex-wrap: wrap;
   }

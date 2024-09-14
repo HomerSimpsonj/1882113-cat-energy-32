@@ -64,6 +64,10 @@
     background-color: $brand-color;
   }
 
+  &:focus-visible {
+    outline: none;
+  }
+
   &:focus-visible::before {
     background-color: $brand-color;
   }

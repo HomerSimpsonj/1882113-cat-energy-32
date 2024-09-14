@@ -66,7 +66,7 @@
   }
 
   @media (min-width: $desktop-point) {
-    @include flex (row, flex-start);
+    @include flex (row, flex-start, stretch);
     padding: 0;
     gap: 80px;
     flex-wrap: wrap;
@@ -102,6 +102,7 @@
   @media (min-width: $desktop-point) {
     padding: 0;
     flex-basis: 245px;
+    align-items: start;
 
     &::after {
       top: -40px;

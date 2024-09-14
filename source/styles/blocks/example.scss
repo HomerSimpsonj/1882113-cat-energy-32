@@ -298,4 +298,14 @@
   &:active::after {
     background-color: rgba(94, 170, 47, 0.6);
   }
+
+  &:focus-visible,
+  &:focus-visible::after {
+    outline: none;
+    background-color: rgb(94, 170, 47);
+  }
+
+  &:focus-visible::before {
+    border-color: rgb(94, 170, 47);
+  }
 }
