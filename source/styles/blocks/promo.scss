@@ -99,15 +99,10 @@
   &:hover {
     border-color: $light-darken-color-mod;
   }
+}
 
-  &:user-invalid {
-    outline: 2px solid $error;
-
-    @media (min-width: $tablet-point) {
-      outline: none;
-      border-color: $error;
-    }
-  }
+.promo__email.error {
+  border-color: $error;
 }
 
 .promo__button {
