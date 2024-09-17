@@ -92,7 +92,6 @@
 }
 
 .example__stats {
-  // @include flex;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
@@ -201,8 +200,6 @@
     margin: 0 0 9px;
   }
 }
-
-// Слайдер
 
 .example__slider {
   display: grid;

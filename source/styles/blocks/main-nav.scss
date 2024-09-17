@@ -159,7 +159,6 @@
   @media (min-width: $tablet-point) {
     padding: 0;
     padding-bottom: 11px;
-    // анимация подчеркивания ссылок
   }
 
   @media (min-width: $tablet-point) {
@@ -191,7 +190,6 @@
       transform: scaleX(1);
       transform-origin: left;
     }
-    // подчеркивание сылок ховер
   }
 
 
@@ -213,7 +211,7 @@
     background-color: $light-color;
   }
 }
-// подчеркивание сыылок анимация
+
 .main-nav__list--index .main-nav__link--current {
   @media (min-width: $desktop-point) {
     text-decoration-color: $light-color;
