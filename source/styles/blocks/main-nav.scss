@@ -115,6 +115,13 @@
   }
 }
 
+@media (max-width: $mobile-only) {
+  .main-nav--nojs .main-nav__list {
+    display: block;
+    position: static;
+  }
+}
+
 .main-nav__item {
   position: relative;
   text-align: center;
