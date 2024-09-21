@@ -60,11 +60,11 @@
           <fieldset class="select-form__group">
             <legend class="select-form__legend">Даные кота</legend>
             <label class="select-form__label" for="name">
-              ИМЯ:*
+              ИМЯ:<sup>*</sup>
               <input class="select-form__input" type="text" id="name" name="name" placeholder="барсик">
             </label>
             <label class="select-form__label" for="wt">
-              Вес (кг):*
+              Вес (кг):<sup>*</sup>
               <input class="select-form__input" type="number" id="wt" name="weight" min="0" max="50" placeholder="7">
             </label>
             <label class="select-form__label" for="age">
@@ -72,6 +72,67 @@
               <input class="select-form__input" type="number" id="age" name="age" min="0" max="50" placeholder="7">
             </label>
           </fieldset>
+
+          <fieldset class="select-form__group">
+            <legend class="select-form__legend">Выбор программы</legend>
+            <label class="select-form__label" for="losing-weight">
+              <input class="select-form__radio" type="radio" id="losing-weight" name="program" value="losing-weight">
+              Похудение
+            </label>
+            <label class="select-form__label" for="weight-gain">
+              <input class="select-form__radio" type="radio" id="weight-gain" name="program" value="weight-gain">
+              Набор массы
+            </label>
+            <label class="select-form__label" for="program-select">
+              <input class="select-form__radio" type="radio" id="program-select" name="program" value="program-select">
+              Не знаю (Нужен ваш совет)
+            </label>
+          </fieldset>
+
+          <fieldset class="select-form__group">
+            <legend class="select-form__legend">
+              Контактные данные (владельца кота)
+            </legend>
+            <label class="select-form__label" for="email">
+              E-mail:<sup>*</sup>
+              <input class="select-form__email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
+            </label>
+            <label class="select-form__label" for="tel">
+              Телефон:<sup>*</sup>
+              <input class="select-form__email" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90">
+            </label>
+          </fieldset>
+
+          <fieldset class="select-form__group">
+            <legend class="select-form__legend">
+              Комментарий
+            </legend>
+            <textarea class="select-form__coment" rows="5" cols="40" name="coment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+
+          <fieldset class="select-form__group">
+            <legend class="select-form__legend">
+              Дополнительно
+            </legend>
+            <label class="select-form__label" for="sweetener">
+              <input class="select-form__chekbox" type="checkbox" id="sweetener" name="sweetener">
+              Сахарозаменитель
+            </label>
+            <label class="select-form__label" for="water">
+              <input class="select-form__chekbox" type="checkbox" id="water" name="water">
+              Питьевая вода
+            </label>
+            <label class="select-form__label" for="milk">
+              <input class="select-form__chekbox" type="checkbox" id="milk" name="milk">
+              Молоко
+            </label>
+            <label class="select-form__label" for="vitamins">
+              <input class="select-form__chekbox" type="checkbox" id="vitamins" name="vitamins">
+              Витамины
+            </label>
+          </fieldset>
+          <button class="select-form__button button" type="submit">Отправить заявку</button>
+          <p class="select-form__reqir">* — Обязательные поля</p>
         </form>
       </div>
     </section>
