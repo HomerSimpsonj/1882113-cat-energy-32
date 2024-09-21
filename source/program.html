@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CAT ENERGY</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Функциональное питание для котов">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <div class="header__container container">
+      <a class="header__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1340px)" srcset="images/site/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/site/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+          <img class="header__logo-img" src="images/site/logo-mobile.svg" width="33" height="38" alt="Логотип Cat energy">
+        </picture>
+        <picture>
+          <source media="(min-width: 1340px)" srcset="images/site/logo-text.svg" width="118" height="21" type="image/svg+xml">
+          <img class="header__logo-text" src="images/site/logo-text.svg" width="101" height="18" alt="Текстовый логотип Cat energy">
+        </picture>
+      </a>
+      <nav class="main-nav main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+          <span class="main-nav__toggle-wrapper"></span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current" href="program.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="program-select">
+      <div class="program-select__container container">
+        <h1 class="program-select__title">Подбор программы</h1>
+        <form class="program-select__form selcet-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="select-form__desc">Заполните анкету, и мы подберем
+            программу питания для вашего кота</p>
+          <fieldset class="select-form__group">
+            <legend class="select-form__legend">Даные кота</legend>
+            <label class="select-form__label" for="name">
+              ИМЯ:*
+              <input class="select-form__input" type="text" id="name" name="name" placeholder="барсик">
+            </label>
+            <label class="select-form__label" for="wt">
+              Вес (кг):*
+              <input class="select-form__input" type="number" id="wt" name="weight" min="0" max="50" placeholder="7">
+            </label>
+            <label class="select-form__label" for="age">
+              Возраст (лет):
+              <input class="select-form__input" type="number" id="age" name="age" min="0" max="50" placeholder="7">
+            </label>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container container">
+      <a class="footer__logo-link" href="index.html">
+        <img class="footer__logo-text" src="images/site/logo-text.svg" width="128" height="24" alt="Текстовый логотип Cat energy">
+      </a>
+      <ul class="footer__social-list socials">
+        <li class="socials__item">
+          <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Ссылка на нас в Vkontakte</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--yout" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Ссылка на нас в Youtube</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--tg" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Ссылка на нас в Telegram</span>
+          </a>
+        </li>
+      </ul>
+      <div class="footer__developer developer">
+        <a class="developer__link" href="https://htmlacademy.ru">
+          <span class="visually-hidden">Ссылка на разработчика Html Academy</span>
+          <span class="developer__link-text">HTML Academy</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
