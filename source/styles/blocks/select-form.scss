@@ -16,7 +16,6 @@
   list-style-type: none;
   font-size: $tertiary-small;
   color: $default-lighten-color;
-  font-weight: 400;
   line-height: 1.12;
   text-transform: uppercase;
 
@@ -32,19 +31,27 @@
 }
 
 .select-form__input,
-.select-form__email {
+.select-form__email,
+.select-form__phone {
   border: 1px solid $border-color;
   padding: 14px 15px 13px;
   flex-grow: 1;
 }
 
-.select-form__input::placeholder,
-.select-form__email::placeholder,
-.select-form__comment::placeholder {
+.select-form__email,
+.select-form__phone {
+  padding: 14px 50px 13px 15px;
+}
+
+.select-form__input,
+.select-form__email,
+.select-form__phone,
+.select-form__comment,
+.select-form__area::placeholder {
   font-family: $secondary-font;
-  font-size: $tertiary-small;
   font-weight: 400;
   line-height: 1.12;
+  font-size: 16px;
   text-transform: uppercase;
 }
 
@@ -54,13 +61,16 @@
 
 .select-form__program {
   padding: 22px 0 19px;
+  margin: 0 0 26px;
 }
 
-.select-form__radio {
+.select-form__radio,
+.select-form__chekbox {
   display: none;
 }
 
-.select-form__label-program {
+.select-form__label-program,
+.select-form__label-additionally {
   @include flex;
   column-gap: 15px;
   cursor: pointer;
@@ -90,4 +100,66 @@
 
 .select-form__radio:checked + .select-form__label-program .select-form__radio-castom::before {
   background-color: $brand-color;
+}
+
+.select-form__contacts .select-form__legend,
+.select-form__comments .select-form__legend,
+.select-form__additionally .select-form__legend {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.08;
+}
+
+.select-form__contacts {
+  margin: 0 0 24px;
+}
+
+.select-form__contacts .select-form__legend {
+  margin: 0 0 35px;
+}
+
+.select-form__comments {
+  margin: 0 0 23px;
+}
+
+.select-form__comments .select-form__legend {
+  margin: 0 0 38px;
+}
+
+.select-form__area {
+  resize: none;
+  width: 100%;
+  border: 1px solid $border-color;
+  padding: 14px 14px 14px 15px;
+}
+
+.select-form__additionally {
+  margin: 0 0 34px;
+}
+
+.select-form__additionally .select-form__legend {
+  margin: 0 0 34px;
+}
+
+.select-form__chekbox-cast {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  border: 1px solid $light-darken-color-mod;
+}
+
+.select-form__chekbox:checked + .select-form__label-additionally .select-form__chekbox-cast {
+  background-image: url("../../icons/stack.svg#tick");
+}
+
+.select-form__button {
+  width: 100%;
+  padding: 10px 44px;
+  margin: 0 0 21px;
+}
+
+.select-form__reqir {
+  font-family: $primary-font;
+  text-align: center;
+  margin: 0 0 32px;
 }
