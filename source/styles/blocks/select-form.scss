@@ -64,8 +64,7 @@
   margin: 0 0 26px;
 }
 
-.select-form__radio,
-.select-form__chekbox {
+.select-form__radio {
   display: none;
 }
 
@@ -141,16 +140,29 @@
   margin: 0 0 34px;
 }
 
-.select-form__chekbox-cast {
-  display: inline-block;
+.select-form__chekbox {
+  appearance: none;
   width: 26px;
   height: 26px;
   border: 1px solid $light-darken-color-mod;
+  background-image: none;
 }
 
-.select-form__chekbox:checked + .select-form__label-additionally .select-form__chekbox-cast {
+.select-form__chekbox:checked {
   background-image: url("../../icons/stack.svg#tick");
+  transition: all 0.8s;
 }
+
+// .select-form__chekbox-cast {
+//   display: inline-block;
+//   width: 26px;
+//   height: 26px;
+//   border: 1px solid $light-darken-color-mod;
+// }
+
+// .select-form__chekbox:checked + .select-form__label-additionally .select-form__chekbox-cast {
+//   background-image: url("../../icons/stack.svg#tick");
+// }
 
 .select-form__button {
   width: 100%;
